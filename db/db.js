@@ -6,7 +6,7 @@ let q = require('q');
 const dbName = 'OQSdb';
 class DataBase {
 
-    constructor(dbName) {
+    constructor() {
         this.dbName = dbName;
         this.db = new sqlite.Database(`${dbName}.db`, (err) => {
             if (err) {
